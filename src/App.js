@@ -34,7 +34,7 @@ const App = () => {
 
   // Gemini API Call Helper
   const callGeminiAPI = async (prompt) => {
-    const apiKey = ""; 
+    const apiKey = "AIzaSyDaHnrHLWd3mAv0qNUrZtfYMmobw9bUpIQ"; 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
     
     try {
@@ -420,7 +420,7 @@ const App = () => {
                         <div className="flex-1 w-full flex gap-2">
                             <input 
                                 type="text" 
-                                placeholder="고객 성향 또는 고민을 입력하세요 (예: 예산이 부족하고 보수적임, 신규 품목 도입 예정)" 
+                                placeholder="고객 성향 또는 고민을 입력하세요 (예: 원가 절감, 신규 품목 개발)" 
                                 className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-indigo-500 outline-none transition-all"
                                 value={clientContext} 
                                 onChange={(e)=>setClientContext(e.target.value)} 
