@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pricing_simulator/static/css/main.451e337c.css",
-    "main.js": "/pricing_simulator/static/js/main.f3bd55c6.js",
+    "main.css": "/pricing_simulator/static/css/main.065bad1d.css",
+    "main.js": "/pricing_simulator/static/js/main.330f3732.js",
     "static/js/453.126e0745.chunk.js": "/pricing_simulator/static/js/453.126e0745.chunk.js",
     "index.html": "/pricing_simulator/index.html",
-    "main.451e337c.css.map": "/pricing_simulator/static/css/main.451e337c.css.map",
-    "main.f3bd55c6.js.map": "/pricing_simulator/static/js/main.f3bd55c6.js.map",
+    "main.065bad1d.css.map": "/pricing_simulator/static/css/main.065bad1d.css.map",
+    "main.330f3732.js.map": "/pricing_simulator/static/js/main.330f3732.js.map",
     "453.126e0745.chunk.js.map": "/pricing_simulator/static/js/453.126e0745.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.451e337c.css",
-    "static/js/main.f3bd55c6.js"
+    "static/css/main.065bad1d.css",
+    "static/js/main.330f3732.js"
   ]
 }
