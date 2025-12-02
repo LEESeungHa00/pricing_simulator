@@ -15,12 +15,12 @@
 
 | Category | Technology | Usage & Features |
 | :--- | :--- | :--- |
-| **Frontend** | **React.js** | [cite_start]컴포넌트 기반 UI 아키텍처, `useState`, `useMemo`를 활용한 상태 관리 [cite: 1] |
-| **Styling** | **Tailwind CSS** | [cite_start]유틸리티 퍼스트 CSS를 통한 반응형 레이아웃 및 디자인 시스템 적용 [cite: 167, 226] |
-| **Visualization** | **Recharts** | [cite_start]시뮬레이션 결과(Base vs Success) 및 비교 차트 시각화 [cite: 1, 261, 269] |
-| **Icons** | **Lucide React** | [cite_start]직관적인 UX를 위한 SVG 아이콘 시스템 [cite: 2] |
-| **Data Processing** | **SheetJS (XLSX)** | [cite_start]클라이언트 사이드 엑셀 파일 파싱 및 데이터 전처리 [cite: 50, 88] |
-| **AI Integration** | **Google Gemini API** | [cite_start]`gemini-2.5-flash` 모델을 활용한 전략 어드바이저 및 제안서 자동 생성 [cite: 52, 53] |
+| **Frontend** | **React.js** | [cite_start]컴포넌트 기반 UI 아키텍처, `useState`, `useMemo`를 활용한 상태 관리|
+| **Styling** | **Tailwind CSS** | [cite_start]유틸리티 퍼스트 CSS를 통한 반응형 레이아웃 및 디자인 시스템 적용 |
+| **Visualization** | **Recharts** | [cite_start]시뮬레이션 결과(Base vs Success) 및 비교 차트 시각화 |
+| **Icons** | **Lucide React** | [cite_start]직관적인 UX를 위한 SVG 아이콘 시스템 |
+| **Data Processing** | **SheetJS (XLSX)** | [cite_start]클라이언트 사이드 엑셀 파일 파싱 및 데이터 전처리|
+| **AI Integration** | **Google Gemini API** | [cite_start]`gemini-2.5-flash` 모델을 활용한 전략 어드바이저 및 제안서 자동 생성 |
 
 ---
 
