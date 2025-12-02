@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# 3. 주요 성과 지표 (Key Metrics & Stats)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+본 시뮬레이터는 단순한 견적 산출을 넘어, 파트너십의 효용성을 증명하기 위해 다음과 같은 핵심 성과 지표(KPI)를 실시간으로 계산하여 시각화합니다.
 
-## Available Scripts
+### 📊 Financial Metrics (재무적 지표)
 
-In the project directory, you can run:
+| 지표명 (Metric) | 아이콘 | 정의 및 비즈니스 의미 | 수식 (Formula) |
+| :--- | :---: | :--- | :--- |
+| **ROI**<br>(투자 수익률) | 📈 | 고객이 지불한 총 비용 대비 얻게 되는 순수익의 비율입니다. 제안의 경제적 타당성을 판단하는 핵심 지표입니다. | $\frac{(\text{Total Saving} - \text{Total Cost})}{\text{Total Cost}} \times 100$ |
+| **Net Benefit**<br>(순이익) | 💰 | 솔루션 도입으로 인한 절감액에서 지불 비용을 제외한 고객의 **순수 현금 확보액**입니다. | $\text{Estimated Savings} - \text{Success Fee} - \text{Base Fee}$ |
+| **Total Contract Value**<br>(총 계약 규모) | 🤝 | 계약 기간 동안 당사가 확보하게 되는 **총 기대 매출(Revenue)**입니다. (고정비 + 성과보수 합산) | $(\text{Annual Base} + \text{Annual Success}) \times \text{Duration}$ |
+| **Effective Fee Rate**<br>(실효 요율) | 📉 | 고객이 절감한 총 금액 대비 실제 지불하는 수수료의 비율입니다. CAP 적용 시 명목 요율보다 낮아질 수 있습니다. | $\frac{\text{Actual Success Fee}}{\text{Total Savings}} \times 100$ |
 
-### `npm start`
+### 🧠 Performance Metrics (성과 분석 지표)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| 지표명 (Metric) | 아이콘 | 정의 및 비즈니스 의미 | 수식 (Formula) |
+| :--- | :---: | :--- | :--- |
+| **Z-Score Improvement**<br>(($\Delta Z$)) | 🎯 | 단순 가격 하락이 아닌, **시장 변동성 대비 구매 성과가 얼마나 개선되었는지**를 나타내는 통계적 수치입니다. (Advanced Mode 전용) | $Z_{base} - Z_{eval}$ |
+| **Unit Saving**<br>(단위 인정액) | ⚖️ | 시장 상황(변동성)을 고려하여 당사의 기여로 인정받는 단위당 절감액입니다. | $\Delta Z \times \sigma_{eval} \text{ (Eval StdDev)}$ |
+| **CAP Usage**<br>(상한 도달 여부) | 🚨 | 성과보수가 사전 설정된 상한선(표준가의 3배)에 도달했는지 여부입니다. 도달 시 고객 보호 장치가 작동했음을 의미합니다. | `IF (SuccessFee > 3 * StdPrice) THEN TRUE` |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
